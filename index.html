@@ -14,11 +14,14 @@
         </div>
 
       <div>
-          <form>
-              <textarea id = "guess" name = 'text' type="text"> 
-                  Enter a number between  1  and  100
-              </textarea>
-          </form>
+        <form>
+        <textarea id = "guess"> 
+            Enter a number between  1  and  100
+        </textarea>
+          <textarea id = "message"> 
+            Stay tuned for game status!
+        </textarea>
+        </form>
       </div>
       
       <header>
@@ -26,7 +29,7 @@
             <ul>
                 <li class = 'button'><button id = 'submit'>Submit Your Guess</button></li>
                 <li class = 'button'><button id = 'hint'>Hint</button></li>
-                <li class = 'button'><button id = 'play_again'>Play Again</button></li>
+                <li class = 'button'><button id = 'reset'>Play Again</button></li>
             </ul>
         </div>
       </header>
@@ -38,9 +41,9 @@
         </form>
       
     <div class="badge">
-      <h4> Guesses Remaining 
+      <h3> Guesses Remaining 
           <div id = 'counter'>5 </div> 
-      </h4>
+      </h3>
         <hr>
     <div> 
           <p>

@@ -52,12 +52,13 @@ button:hover {
 }
 
 #counter {
-  border-radius: 50%;
+  border-radius: 100%;
   height: 50px;
   width: 50px;
   text-align: center;
   padding-top: 10px; 
   box-shadow: 3px 3px 3px #777;
+  font-size: 1.5em;
   background: rgb(254,255,233); /* Old browsers */
 background: -moz-linear-gradient(top, rgba(254,255,233,1) 0%, rgba(244,255,39,1) 97%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,233,1)), color-stop(97%,rgba(244,255,39,1))); /* Chrome,Safari4+ */
@@ -88,25 +89,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe9', end
   background-color: #F5F5F5;
   color: #555;
   text-align: justify;
-  font: 0.9em 'raleway', sans-sarif; 
+  font: 1.2em 'raleway', sans-sarif; 
   font-weight: 400;
 } 
 
 /* // FORM//*/
-#guess {
-  text-align: left;
-  vertical-align: top;
-  width: 50%;
-  height: 100px;
-  font: 1em 'Francois One', sans-sarif;
-  border-radius: 10%;
+textarea{
+  text-align: center;
+  vertical-align: middle;
+  padding: 3%;
+  margin: 3%;
+  width: 35%;
+  height: 5em;
+  font: 0.9em 'Francois One', sans-sarif;
+  border-radius: 20%;
   font-weight: 100;
      color: #777;
+  background-color: #b8efe9;
 
 
-textarea:hover {
-  background-color: blue;
-}
 
 /* ///  TEXT////*/
   h1 {
@@ -115,7 +116,7 @@ textarea:hover {
      color: #777;
 }
 
-h4 {
+h3 {
 
   font: 1.5em 'Francois One', sans-sarif;
   font-weight: 200;
@@ -123,5 +124,9 @@ h4 {
   }
 
 .blue {
+  color: blue;
+}
+
+.game_over {
   color: blue;
 }
