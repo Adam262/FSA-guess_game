@@ -55,20 +55,39 @@ $(document).ready(function(){
         } else if (value == random) {
             $('#message').html("Congrats. You win!");
                 }
-    }); // handler for random number generator
 
-   $('#reset').on('click', function(){
+    $('#reset').on('click', function(){
         $('#guess').val("Enter a number between  1  and  100").removeClass('game_over');
-        countdown = 5;
-        $('#counter').val(countdown).html(countdown);
-         $('#message').html("");
+          countdown = 5;
+          $('#counter').val(countdown).html(countdown);
+          $('#message').val("").html("");
 
     }); // handler for reset button
 
-     $('#hint').on('click', function(){
-         $('#message').html("You are within" + Math.abs(value - random)*2 + " units of the right answer");
+    $('#hint').on('click', function () {
+        var hint = function () {
+          if (value - random <= 50 && value - random > 40 || random - value <= 50 && random - value > 40) {
+              return 50;
+          } else if (value - random <= 40 && value - random > 30 || random - value <= 40 && random - value > 30) {
+              return 40;
+          } else if (value - random <= 30 && value - random > 20 || random - value <= 30 && random - value > 20) {
+              return 30;
+          } else if (value - random <= 20 && value - random > 10 || random - value <= 20 && random - value > 10) {
+              return 20;
+          } else if (value - random <= 10 && value - random > 5 || random - value <= 10 && random - value > 5) {
+              return 10;
+          } else if (value - random <= 5 && value - random > 0 || random - value <= 5 && random - value > 0) {
+              return 5;
+          } else if (value - random > 50 || random - value > 50) {
+              return "a shitload of";
+          }
+        }; // hint variable
+            $('#message').html("You are within " + (hint()) + " units of the right answer");
 
-    }); // handler for hint button
+        }); // handler for hint button
+    }); // handler for random number generator
+
+
 }); //document ready function
 
 
