@@ -1,6 +1,126 @@
-h1 {
-  color: red;
+/* /// GLOBAL ///*/
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Francois+One); 
+
+/* /// NAV + LINKS ///*/
+nav {
+  max-width: 960px; 
+    margin: 0 auto; /* creates large l/r margins to center  header*/
+  position: relative;
+    }
+
+li { 
+  list-style: none; /*removes bullets from <li>*/
+  display: inline; 
+  margin: 15px; 
+} 
+
+a, a:visited{ 
+  text-decoration: none; /*removes links from underline */
+  font-family: 'raleway', sans-sarif;
+  font-weight: 200;
+  color: #555;
+
+} 
+
+a.selected, a:hover {
+  color: #3366cc;
 }
+
+/* //// BUTTONS////*/
+button {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+    color: #777;
+    font: bold .7em 'raleway', sans-sarif;
+    box-shadow: 3px 3px 3px #777;
+    float: left;
+    margin: 0 3%;
+}
+button:focus {
+    outline: 0;
+}
+button:hover {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #777;
+    color: white;
+    font: bold .7em 'raleway', sans-sarif;
+    box-shadow: 3px 3px 3px #777;
+  
+}
+
+#counter {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding-top: 10px; 
+  box-shadow: 3px 3px 3px #777;
+  background: rgb(254,255,233); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(254,255,233,1) 0%, rgba(244,255,39,1) 97%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,233,1)), color-stop(97%,rgba(244,255,39,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(254,255,233,1) 0%,rgba(244,255,39,1) 97%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(254,255,233,1) 0%,rgba(244,255,39,1) 97%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(254,255,233,1) 0%,rgba(244,255,39,1) 97%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(254,255,233,1) 0%,rgba(244,255,39,1) 97%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffe9', endColorstr='#f4ff27',GradientType=0 ); /* IE6-9 */
+}
+
+#counter:hover {
+  color: yellow;
+  background: #777;
+  text-shadow: 3px 3px #777;;
+}
+/*/// .WRAPPER ///*/
+.wrapperhead {
+  max-width: 960px; 
+  text-align: center; /* easily centers header text*/
+  margin: 0 auto; /* easily centers wrapper element in browser window*/
+  padding: 1%;
+}
+
+.wrapper{ 
+    max-width: 960px; 
+    margin: 0 auto;
+  padding: 1%;
+  background-color: #F5F5F5;
+  color: #555;
+  text-align: justify;
+  font: 0.9em 'raleway', sans-sarif; 
+  font-weight: 400;
+} 
+
+/* // FORM//*/
+#guess {
+  text-align: left;
+  vertical-align: top;
+  width: 50%;
+  height: 100px;
+  font: 1em 'Francois One', sans-sarif;
+  border-radius: 10%;
+  font-weight: 100;
+     color: #777;
+
+
+textarea:hover {
+  background-color: blue;
+}
+
+/* ///  TEXT////*/
+  h1 {
+  font: 3em 'Francois One', sans-sarif;
+  font-weight: 400;
+     color: #777;
+}
+
+h4 {
+
+  font: 1.5em 'Francois One', sans-sarif;
+  font-weight: 200;
+     color: #777;
+  }
 
 .blue {
   color: blue;

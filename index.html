@@ -4,16 +4,54 @@
   <meta charset = 'UTF-8'>
       <title> Adam Barcan | FSA Guessing Game</title>
           <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-          <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-          <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
           <link rel = "stylesheet" href = "css/main.css">
             <!-- Put main.css after normalize. We do not want Normalize to overwrite our styles-->
 </head>
-<body>
-<h1>Hello World</h1>
-          <script src = "http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-          <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-          <script src = "js/main.js"></script>
-          <!-- By best practice, put JS links at bottom of page-->
-</body>
+  <body>
+     <div class = 'wrapper'>
+        <div>
+            <h1>Guess the Number</h1>
+        </div>
+
+      <div>
+          <form>
+              <textarea id = "guess" name = 'text' type="text"> 
+                  Enter a number between  1  and  100
+              </textarea>
+          </form>
+      </div>
+      
+      <header>
+        <div class = 'wrapperhead'>
+            <ul>
+                <li class = 'button'><button id = 'submit'>Submit Your Guess</button></li>
+                <li class = 'button'><button id = 'hint'>Hint</button></li>
+                <li class = 'button'><button id = 'play_again'>Play Again</button></li>
+            </ul>
+        </div>
+      </header>
+
+     
+        <form role = 'form'>
+            <div class = 'form-group'>
+            </div>
+        </form>
+      
+    <div class="badge">
+      <h4> Guesses Remaining 
+          <div id = 'counter'>5 </div> 
+      </h4>
+        <hr>
+    <div> 
+          <p>
+              &copy Adam Barcan 2014
+          </p>
+      </div>
+    </div> <!-- class = 'container'-->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/main.js"></script>
+  </body>
+</html>
 </html>
