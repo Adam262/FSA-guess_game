@@ -53,14 +53,14 @@ $(document).ready(function(){
         } else if (value - random < 5 && value - random > 0) {
             $('#message').html("You're red hot. Guess a tad lower.");
         } else if (value == random) {
-            $('#message').html("Congrats. You win!");
+            $('#message').html("Congrats. You win!").addClass("game_over");
                 }
 
     $('#reset').on('click', function(){
         $('#guess').val("Enter a number between  1  and  100").removeClass('game_over');
           countdown = 5;
           $('#counter').val(countdown).html(countdown);
-          $('#message').val("").html("");
+          $('#message').val("").html("").removeClass("game_over");;
 
     }); // handler for reset button
 
